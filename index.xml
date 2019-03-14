@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MrFroll on MrFroll</title>
+    <link>/</link>
+    <description>Recent content in MrFroll on MrFroll</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; MrFroll</copyright>
+    <lastBuildDate>Mon, 04 Mar 2019 22:05:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Book Queue</title>
+      <link>/page/books/</link>
+      <pubDate>Mon, 04 Mar 2019 22:05:00 +0000</pubDate>
+      
+      <guid>/page/books/</guid>
+      <description>&lt;p&gt;Here is a list of books that I want to read (or started, but not finished). Just to clean my memory from it.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Book&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;th&gt;Note&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Modern Java in Action: Lambdas, streams, functional and reactive programming&amp;rdquo; &lt;em&gt;by Raoul-Gabriel Urma, Mario Fusco, Alan Mycroft&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;todo&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.manning.com/books/modern-java-in-action&#34; target=&#34;_blank&#34;&gt;Publisher&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;RabbitMQ in Depth&amp;rdquo; &lt;em&gt;by Gavin M. Roy&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;todo&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.manning.com/books/rabbitmq-in-depth&#34; target=&#34;_blank&#34;&gt;Publisher&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Release It!&amp;rdquo; &lt;em&gt;by Michael Nygard&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;in progress&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://pragprog.com/book/mnee2/release-it-second-edition&#34; target=&#34;_blank&#34;&gt;Publisher&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Docker in Action&amp;rdquo;, 2nd Edition by by Jeff Nickoloff, Stephen Kuenzli&lt;/td&gt;
+&lt;td&gt;in progress&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.manning.com/books/docker-in-action-second-edition&#34; target=&#34;_blank&#34;&gt;Publisher&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
