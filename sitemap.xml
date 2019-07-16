@@ -4,8 +4,8 @@
     
     <url>
     
-      <loc>/page/books/</loc>
-      <lastmod>2019-03-04T22:05:00+00:00</lastmod>
+      <loc>/project/feedhandler/</loc>
+      <lastmod>2019-07-03T07:46:56+00:00</lastmod>
     </url>
     
   
@@ -44,16 +44,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-03-04T22:05:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/page/</loc>
-      <lastmod>2019-03-04T22:05:00+00:00</lastmod>
+      <lastmod>2019-07-03T07:46:56+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -62,6 +53,15 @@
     <url>
     
       <loc>/post/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2019-07-03T07:46:56+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
