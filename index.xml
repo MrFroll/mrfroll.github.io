@@ -7,8 +7,105 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; MrFroll</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 07:46:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reduce and GRG Installations on Ubuntu</title>
+      <link>/post/reduce-and-grg-installations-on-ubuntu/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/reduce-and-grg-installations-on-ubuntu/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.reduce-algebra.com/grg32/grg32.php&#34; target=&#34;_blank&#34;&gt;GRG&lt;/a&gt; is the computer algebra system witch was designed to make calculation in differential geometry and field theory as simple and natural as possible. It’s is based on the computer algebra system &lt;a href=&#34;http://reduce-algebra.com/&#34; target=&#34;_blank&#34;&gt;REDUCE&lt;/a&gt;. Despite the fact that this program was the creation in the nineties at the present time it remains relevant. Unfortunately you can’t find it in standard repositories of Ubuntu or other popular Linux distributives. But you can install it from sources without any problems.&lt;/p&gt;
+
+&lt;p&gt;Mainly the installation process is pretty simple. All instructions are available on Obtaining REDUCE from &lt;a href=&#34;http://reduce-algebra.com/downloading.htm&#34; target=&#34;_blank&#34;&gt;SourceForge&lt;/a&gt; page and in the grg documentation. The main target of this post is an advertisement of the good and strong tool for physicists.&lt;/p&gt;
+
+&lt;p&gt;First of all you need to install &lt;code&gt;wget&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt update
+$ sudo apt install wget
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then you should download REDUCE deb package and GRG tar.gz archive. I used &lt;code&gt;deb&lt;/code&gt; snapshot package from 2019-01-20. I believe you can use the last snapshot instead. It seems that there is no one golden source for this package now but you can find it on official Reduce site &lt;a href=&#34;http://reduce-algebra.com/grg32.htm&#34; target=&#34;_blank&#34;&gt;http://reduce-algebra.com/grg32.htm&lt;/a&gt;. It&amp;rsquo;s up to you what source you are going to use.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ wget https://sourceforge.net/projects/reduce-algebra/files/snapshot_2019-01-20/linux64/reduce-complete_4865_amd64.deb/download -O ~/reduce-complete_4865_amd64.deb
+
+$ wget &#39;http://www.reduce-algebra.com/grg32/grg32r6.tar.gz&#39; -O ~/grg32r6.tgz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To install Reduce with all dependencies you can run command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ apt install ./reduce-complete_4865_amd64.deb
+$ rm reduce-complete_4865_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It’s a good idea to check reduce have been compiled correctly&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ reduce
+
+Reduce (Free PSL version), 5-Jul-2013 ...
+1:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if you see something like this your compilation is ok.
+Now it’s time to add GRG in the reduce equipment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd ~/
+$ mkdir grg &amp;amp; tar xfz grg32r6.tgz -C grg
+$ cd grg
+$ reduce
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in the reduce command line we start compilation by&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;1: in &amp;quot;compile.grg&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if finally you have something like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;GRG has been compiled.
+Move all created grg*.b files in the $reduce/fasl
+directory or keep them in your working directory.
+nil
+
+Quitting.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;that’s ok.&lt;/p&gt;
+
+&lt;p&gt;Now we should follow the advise&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mv *.b /opt/reduce/trunk/pslbuild/i686-unknown-ubuntu13.04/red/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and check that GRG was compiled correctly&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ reduce
+1: load grg;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the good reaction is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;This is GRG 3.2 release 6 (July 16, 2000) ...
+System variables are lower-cased: e i pi sin ...
+Dimension is 4 with Signature (-,+,+,+)
+
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to see how it works we can start &lt;code&gt;bondi.low&lt;/code&gt; example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; &amp;quot;bondi.low&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;it must return file bondi.out in your current directory. This file contain results of evaluation of the commands from bondi.low file. Then we can remove files witch we don’t need any more.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rm grg*.sl *.csl *.psl compile.grg *.red *.log
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that we have a directory &lt;code&gt;/opt/reduce/&lt;/code&gt; with reduce and grg and a directory &lt;code&gt;$HOME/grg/&lt;/code&gt; with examples. We have &lt;code&gt;/usr/bin/reduce&lt;/code&gt; symlink to have access to reduce from any directories.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Feedhandler</title>
