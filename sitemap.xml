@@ -1,115 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    <url>
-    
-      <loc>/post/reduce-and-grg-installations-on-ubuntu/</loc>
-      <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/</loc>
+    <lastmod>2020-01-27T10:38:54+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/feedhandler/</loc>
-      <lastmod>2019-07-03T07:46:56+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/post/</loc>
+    <lastmod>2020-01-27T10:38:54+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/author/admin/</loc>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/post/reduce-grg/</loc>
+    <lastmod>2020-01-27T10:38:54+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/project/feedhandler/</loc>
+    <lastmod>2019-07-03T07:46:56+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/project/</loc>
+    <lastmod>2019-07-03T07:46:56+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/authors/admin/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/authors/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2019-07-03T07:46:56+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/categories/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/publication_types/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication/</loc>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/publication/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/talk/</loc>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/talk/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/admin/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://mrfroll.com/tags/</loc>
+  </url>
   
 </urlset>

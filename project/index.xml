@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on MrFroll</title>
-    <link>/project/</link>
-    <description>Recent content in Projects on MrFroll</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; MrFroll</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 07:46:56 +0000</lastBuildDate>
-    
-	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>Projects | MrFroll</title>
+    <link>https://mrfroll.com/project/</link>
+      <atom:link href="https://mrfroll.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MrFroll</copyright><lastBuildDate>Wed, 03 Jul 2019 07:46:56 +0000</lastBuildDate>
+    <image>
+      <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://mrfroll.com/project/</link>
+    </image>
     
     <item>
-      <title>Feedhandler</title>
-      <link>/project/feedhandler/</link>
+      <title>Feedhandler.ru</title>
+      <link>https://mrfroll.com/project/feedhandler/</link>
       <pubDate>Wed, 03 Jul 2019 07:46:56 +0000</pubDate>
-      
-      <guid>/project/feedhandler/</guid>
+      <guid>https://mrfroll.com/project/feedhandler/</guid>
       <description></description>
     </item>
     
