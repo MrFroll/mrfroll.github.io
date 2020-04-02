@@ -2,43 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MrFroll</title>
-    <link>https://mrfroll.com/</link>
-      <atom:link href="https://mrfroll.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://mrfroll.github.io/</link>
+      <atom:link href="https://mrfroll.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>MrFroll</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MrFroll</copyright><lastBuildDate>Mon, 27 Jan 2020 10:38:54 +0000</lastBuildDate>
     <image>
-      <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://mrfroll.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>MrFroll</title>
-      <link>https://mrfroll.com/</link>
+      <link>https://mrfroll.github.io/</link>
     </image>
     
     <item>
       <title>Reduce GRG</title>
-      <link>https://mrfroll.com/post/reduce-grg/</link>
+      <link>https://mrfroll.github.io/note/reduce-grg/</link>
       <pubDate>Mon, 27 Jan 2020 10:38:54 +0000</pubDate>
-      <guid>https://mrfroll.com/post/reduce-grg/</guid>
-      <description>&lt;p&gt;Reduce-GRG is a docker image with mathematical packages to make theoretical physics calculation (General Relativity and some post-Einstein theories). You can find it on my dockerhub page here &lt;a href=&#34;https://hub.docker.com/repository/docker/mrfroll/reduce-grg&#34;&gt;mrfroll/reduce-grg&lt;/a&gt;
+      <guid>https://mrfroll.github.io/note/reduce-grg/</guid>
+      <description>&lt;p&gt;Reduce-GRG is a docker image with mathematical packages to make theoretical physics calculation (General Relativity and some post-Einstein theories). You can find it on my dockerhub page here 
+&lt;a href=&#34;https://hub.docker.com/repository/docker/mrfroll/reduce-grg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mrfroll/reduce-grg&lt;/a&gt;
 It consist of&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://reduce-algebra.sourceforge.io/&#34;&gt;REDUCE&lt;/a&gt; system for general mathematics calculation;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://reduce-algebra.sourceforge.io/grg32/grg32.php&#34;&gt;GRG 3.2&lt;/a&gt; for calculation with physics abstractions in exterior form formalism.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://reduce-algebra.sourceforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REDUCE&lt;/a&gt; system for general mathematics calculation;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://reduce-algebra.sourceforge.io/grg32/grg32.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GRG 3.2&lt;/a&gt; for calculation with physics abstractions in exterior form formalism.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I believe that this image make life a little easier. To run container on you computer you have to have only docker. Then you will get all advantages of isolation with it. You don&#39;t need to have any specific environment to run REDUCE with GRG.&lt;/p&gt;
 &lt;p&gt;To run REDUCE just execute in command-line to run &lt;code&gt;v0.1&lt;/code&gt; of reduce-grg&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run --rm -ti mrfroll/reduce-grg:v0.1 redpsl
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Any way, you still can install REDUCE and GRG manually. Just check this page for further instructions &lt;a href=&#34;https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/&#34;&gt;Reduce and GRG Installations on Ubuntu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I would be appreciate for any contribution and comments related to this post. Dockerfile and all other source code are available on my github page &lt;a href=&#34;https://github.com/MrFroll/reduce-grg&#34;&gt;MrFroll/reduce-grg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Any way, you still can install REDUCE and GRG manually. Just check this page for further instructions 
+&lt;a href=&#34;https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reduce and GRG Installations on Ubuntu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would be appreciate for any contribution and comments related to this post. Dockerfile and all other source code are available on my github page 
+&lt;a href=&#34;https://github.com/MrFroll/reduce-grg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MrFroll/reduce-grg&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Reduce and GRG Installations on Ubuntu</title>
-      <link>https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/</link>
+      <link>https://mrfroll.github.io/note/reduce-and-grg-installations-on-ubuntu/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.reduce-algebra.com/grg32/grg32.php&#34;&gt;GRG&lt;/a&gt; is the computer algebra system witch was designed to make calculation in differential geometry and field theory as simple and natural as possible. It’s is based on the computer algebra system &lt;a href=&#34;http://reduce-algebra.com/&#34;&gt;REDUCE&lt;/a&gt;. Despite the fact that this program was the creation in the nineties at the present time it remains relevant. Unfortunately you can’t find it in standard repositories of Ubuntu or other popular Linux distributives. But you can install it from sources without any problems.&lt;/p&gt;
-&lt;p&gt;Mainly the installation process is pretty simple. All instructions are available on Obtaining REDUCE from &lt;a href=&#34;http://reduce-algebra.com/downloading.htm&#34;&gt;SourceForge&lt;/a&gt; page and in the grg documentation. The main target of this post is an advertisement of the good and strong tool for physicists.&lt;/p&gt;
+      <guid>https://mrfroll.github.io/note/reduce-and-grg-installations-on-ubuntu/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://www.reduce-algebra.com/grg32/grg32.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GRG&lt;/a&gt; is the computer algebra system witch was designed to make calculation in differential geometry and field theory as simple and natural as possible. It’s is based on the computer algebra system 
+&lt;a href=&#34;http://reduce-algebra.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REDUCE&lt;/a&gt;. Despite the fact that this program was the creation in the nineties at the present time it remains relevant. Unfortunately you can’t find it in standard repositories of Ubuntu or other popular Linux distributives. But you can install it from sources without any problems.&lt;/p&gt;
+&lt;p&gt;Mainly the installation process is pretty simple. All instructions are available on Obtaining REDUCE from 
+&lt;a href=&#34;http://reduce-algebra.com/downloading.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SourceForge&lt;/a&gt; page and in the grg documentation. The main target of this post is an advertisement of the good and strong tool for physicists.&lt;/p&gt;
 &lt;p&gt;First of all you need to install &lt;code&gt;wget&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt update
 $ sudo apt install wget
@@ -103,9 +111,9 @@ Dimension is 4 with Signature (-,+,+,+)
     
     <item>
       <title>Feedhandler.ru</title>
-      <link>https://mrfroll.com/project/feedhandler/</link>
+      <link>https://mrfroll.github.io/project/feedhandler/</link>
       <pubDate>Wed, 03 Jul 2019 07:46:56 +0000</pubDate>
-      <guid>https://mrfroll.com/project/feedhandler/</guid>
+      <guid>https://mrfroll.github.io/project/feedhandler/</guid>
       <description></description>
     </item>
     
