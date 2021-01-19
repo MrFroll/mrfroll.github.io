@@ -5,12 +5,128 @@
     <link>https://mrfroll.com/</link>
       <atom:link href="https://mrfroll.com/index.xml" rel="self" type="application/rss+xml" />
     <description>MrFroll</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© MrFroll</copyright><lastBuildDate>Mon, 27 Jan 2020 10:38:54 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru</language><copyright>©2021 MrFroll</copyright><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>MrFroll</title>
       <link>https://mrfroll.com/</link>
     </image>
+    
+    <item>
+      <title>Feedhandler: разбиение на микросервисы</title>
+      <link>https://mrfroll.com/note/feedhandler-microservices-decomposition/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://mrfroll.com/note/feedhandler-microservices-decomposition/</guid>
+      <description>&lt;p&gt;Я начал работы по разбиению монолита 
+&lt;a href=&#34;https://feedhandler.ru&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;feedhandler.ru&lt;/a&gt; на микросервисы. Или просто сервисы, если будет угодно.&lt;/p&gt;
+&lt;p&gt;На 
+&lt;a href=&#34;https://mrfroll.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mrfroll.com&lt;/a&gt; я планирую периодически рассказывать как идут дела в этом направлении и делиться инсайтами. Соответствующие заметки буду помечать новым тегом 
+&lt;a href=&#34;https://mrfroll.com/tags/into-microservices/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;into microservices&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;В статье на Хабре 
+&lt;a href=&#34;https://habr.com/ru/post/522994/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Чему я научился, пока писал свой агрегатор цен на игры&amp;rdquo;&lt;/a&gt; я рассказал, что FeedHandler - это вот такой монолит:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-старая-схема-feedhandlerru&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/before.png&#34; data-caption=&#34;Старая схема Feedhandler.ru&#34;&gt;
+
+
+  &lt;img src=&#34;./img/before.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Старая схема Feedhandler.ru
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+Если кратко, то он состоит из двух приложений:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt; &amp;ndash; огромный java-монолит, приложение, которое делает все: собирает данные из PlayStation Store, сохраняет их, строит отчеты, отдает json в UI feedhandler и даже создает sitemap.xml файл;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UI&lt;/strong&gt; &amp;ndash; вьюха написанная на Nuxt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Вначале такая архитектура позволила ускорить разработку, но за два года существования продукта стало страшно вносить в этот монолит даже небольшие изменения. Релизы стали дорогими так как изменения требуют деплоить backend целиком.&lt;/p&gt;
+&lt;p&gt;Декомпозицию проекта на микросервисы должна решить эти проблемы. Как бонус можно придумывать безумные названия для этих сервисов.&lt;/p&gt;
+&lt;p&gt;Планируется поэтапная работа &amp;ndash; следующая контрольная точка будет выглядить следующим образом:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-новая-схема-feedhandlerru&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;./img/after.png&#34; data-caption=&#34;Новая схема Feedhandler.ru&#34;&gt;
+
+
+  &lt;img src=&#34;./img/after.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Новая схема Feedhandler.ru
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Здесь стрелки указывают поток информации. Сервисы на схеме выполняют следующие функции:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Trakt&lt;/strong&gt; &amp;ndash; забирает сырые данные из PlayStation Store и помещает их в Postgres-хранилище;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pricer&lt;/strong&gt; &amp;ndash; забирает сырые данные из Postgres вытаскивает из них цены и сбрасывает эти данные в MongoDB-хранилище цен;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gortto&lt;/strong&gt; &amp;ndash; сервис авторизации пользователя;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tresury&lt;/strong&gt; &amp;ndash; отдает цены на сайт feedhandler.ru.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Из этой схемы в продакшн вышел только Tresury, остальные сервисы в процессе разработки, но это только начало.&lt;/p&gt;
+&lt;p&gt;Я хочу достичь следующих целей:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;проще и безопасней деплоить: маленький сервис, видно, что делает, подкрутил и поехали;&lt;/li&gt;
+&lt;li&gt;отказоустойчивость: баги будут изолированы друг от друга сервисами;&lt;/li&gt;
+&lt;li&gt;масштабируемость: чтобы раздавать на сайт json можно запустить пару инстансов соответствующих сервисов.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Я ожидаю следующие проблемы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;вероятно, периодически буду забывать какой сервис за что отвечает;&lt;/li&gt;
+&lt;li&gt;надо срочно разворачивать ekl, не знаю как без него буду разбирать сложные проблемы;&lt;/li&gt;
+&lt;li&gt;думаю столкнусь с ситуацией когда на стыке сервисов получу несоответствие моделей.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Используемые на данном этапе инструменты:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Cloud Gateway - как API Gateway;&lt;/li&gt;
+&lt;li&gt;Eureka - в качестве Discovery Service;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Reduce GRG</title>
@@ -48,7 +164,7 @@ It consist of&lt;/p&gt;
 &lt;p&gt;Mainly the installation process is pretty simple. All instructions are available on Obtaining REDUCE from 
 &lt;a href=&#34;http://reduce-algebra.com/downloading.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SourceForge&lt;/a&gt; page and in the grg documentation. The main target of this post is an advertisement of the good and strong tool for physicists.&lt;/p&gt;
 &lt;p&gt;First of all you need to install &lt;code&gt;wget&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo apt update
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;`$ sudo apt update
 $ sudo apt install wget
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;then you should download REDUCE deb package and GRG tar.gz archive. I used &lt;code&gt;deb&lt;/code&gt; snapshot package from 2019-01-20. I believe you can use the last snapshot instead. It seems that there is no one golden source for this package now but you can find it on official Reduce site &lt;a href=&#34;http://reduce-algebra.com/grg32.htm&#34;&gt;http://reduce-algebra.com/grg32.htm&lt;/a&gt;. It&#39;s up to you what source you are going to use.&lt;/p&gt;
@@ -114,7 +230,9 @@ Dimension is 4 with Signature (-,+,+,+)
       <link>https://mrfroll.com/project/feedhandler/</link>
       <pubDate>Wed, 03 Jul 2019 07:46:56 +0000</pubDate>
       <guid>https://mrfroll.com/project/feedhandler/</guid>
-      <description></description>
+      <description>&lt;p&gt;Заметки про проект можно найти в категории 
+&lt;a href=&#34;https://mrfroll.com/categories/feedhandler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;feedhandler&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

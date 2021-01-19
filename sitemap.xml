@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mrfroll.com/categories/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/categories/feedhandler/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/note/feedhandler-microservices-decomposition/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/tags/into-microservices/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mrfroll.com/</loc>
-    <lastmod>2020-01-27T10:38:54+00:00</lastmod>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/tags/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mrfroll.com/note/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/tags/docker/</loc>
     <lastmod>2020-01-27T10:38:54+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mrfroll.com/note/reduce-grg/</loc>
+    <lastmod>2020-01-27T10:38:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrfroll.com/tags/symbolic-computation/</loc>
     <lastmod>2020-01-27T10:38:54+00:00</lastmod>
   </url>
   
@@ -41,10 +76,6 @@
   </url>
   
   <url>
-    <loc>https://mrfroll.com/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://mrfroll.com/publication_types/</loc>
   </url>
   
@@ -54,10 +85,6 @@
   
   <url>
     <loc>https://mrfroll.com/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mrfroll.com/tags/</loc>
   </url>
   
 </urlset>
