@@ -60,7 +60,7 @@
 
 Если кратко, то он состоит из двух приложений:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt; &amp;ndash; огромный java-монолит, приложение, которое делает все: собирает данные из PlayStation Store, сохраняет их, строит отчеты, отдает json в UI feedhandler и даже создает sitemap.xml файл;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt; &amp;ndash; огромный java-монолит, приложение, которое делает все: собирает данные из PlayStation Store и сохраняет их, строит отчеты, отдает json в UI feedhandler и даже создает sitemap.xml файл;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;UI&lt;/strong&gt; &amp;ndash; вьюха написанная на Nuxt.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Вначале такая архитектура позволила ускорить разработку, но за два года существования продукта стало страшно вносить в этот монолит даже небольшие изменения. Релизы стали дорогими так как изменения требуют деплоить backend целиком.&lt;/p&gt;
@@ -103,8 +103,8 @@
 &lt;p&gt;Здесь стрелки указывают поток информации. Сервисы на схеме выполняют следующие функции:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Trakt&lt;/strong&gt; &amp;ndash; забирает сырые данные из PlayStation Store и помещает их в Postgres-хранилище;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pricer&lt;/strong&gt; &amp;ndash; забирает сырые данные из Postgres вытаскивает из них цены и сбрасывает эти данные в MongoDB-хранилище цен;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gortto&lt;/strong&gt; &amp;ndash; сервис авторизации пользователя;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pricer&lt;/strong&gt; &amp;ndash; забирает сырые данные из Postgres-хранилища, вытаскивает из них цены и сбрасывает эти данные в MongoDB-хранилище цен;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gortto&lt;/strong&gt; &amp;ndash; сервис аутентификации и авторизации пользователя;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Tresury&lt;/strong&gt; &amp;ndash; отдает цены на сайт feedhandler.ru.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Из этой схемы в продакшн вышел только Tresury, остальные сервисы в процессе разработки, но это только начало.&lt;/p&gt;
