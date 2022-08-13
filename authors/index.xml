@@ -5,20 +5,12 @@
     <link>https://mrfroll.com/authors/</link>
       <atom:link href="https://mrfroll.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru</language><copyright>©2021 MrFroll</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru</language>
     <image>
-      <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://mrfroll.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Authors</title>
       <link>https://mrfroll.com/authors/</link>
     </image>
-    
-    <item>
-      <title></title>
-      <link>https://mrfroll.com/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mrfroll.com/authors/admin/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

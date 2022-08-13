@@ -5,36 +5,12 @@
     <link>https://mrfroll.com/tags/</link>
       <atom:link href="https://mrfroll.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru</language><copyright>©2021 MrFroll</copyright><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru</language><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://mrfroll.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Tags</title>
       <link>https://mrfroll.com/tags/</link>
     </image>
-    
-    <item>
-      <title>into microservices</title>
-      <link>https://mrfroll.com/tags/into-microservices/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://mrfroll.com/tags/into-microservices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://mrfroll.com/tags/docker/</link>
-      <pubDate>Mon, 27 Jan 2020 10:38:54 +0000</pubDate>
-      <guid>https://mrfroll.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>symbolic computation</title>
-      <link>https://mrfroll.com/tags/symbolic-computation/</link>
-      <pubDate>Mon, 27 Jan 2020 10:38:54 +0000</pubDate>
-      <guid>https://mrfroll.com/tags/symbolic-computation/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker | MrFroll</title>
+    <link>https://mrfroll.com/tag/docker/</link>
+      <atom:link href="https://mrfroll.com/tag/docker/index.xml" rel="self" type="application/rss+xml" />
+    <description>docker</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru</language><lastBuildDate>Mon, 27 Jan 2020 10:38:54 +0000</lastBuildDate>
+    <image>
+      <url>https://mrfroll.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>docker</title>
+      <link>https://mrfroll.com/tag/docker/</link>
+    </image>
+    
+    <item>
+      <title>Reduce GRG</title>
+      <link>https://mrfroll.com/note/reduce-grg/</link>
+      <pubDate>Mon, 27 Jan 2020 10:38:54 +0000</pubDate>
+      <guid>https://mrfroll.com/note/reduce-grg/</guid>
+      <description>&lt;p&gt;Reduce-GRG is a docker image with mathematical packages to make theoretical physics calculation (General Relativity and some post-Einstein theories). You can find it on my dockerhub page here &lt;a href=&#34;https://hub.docker.com/repository/docker/mrfroll/reduce-grg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mrfroll/reduce-grg&lt;/a&gt;
+It consist of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://reduce-algebra.sourceforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REDUCE&lt;/a&gt; system for general mathematics calculation;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://reduce-algebra.sourceforge.io/grg32/grg32.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GRG 3.2&lt;/a&gt; for calculation with physics abstractions in exterior form formalism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I believe that this image make life a little easier. To run container on you computer you have to have only docker. Then you will get all advantages of isolation with it. You don&amp;rsquo;t need to have any specific environment to run REDUCE with GRG.&lt;/p&gt;
+&lt;p&gt;To run REDUCE just execute in command-line to run &lt;code&gt;v0.1&lt;/code&gt; of reduce-grg&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run --rm -ti mrfroll/reduce-grg:v0.1 redpsl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any way, you still can install REDUCE and GRG manually. Just check this page for further instructions &lt;a href=&#34;https://mrfroll.com/post/reduce-and-grg-installations-on-ubuntu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reduce and GRG Installations on Ubuntu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would be appreciate for any contribution and comments related to this post. Dockerfile and all other source code are available on my github page &lt;a href=&#34;https://github.com/MrFroll/reduce-grg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MrFroll/reduce-grg&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

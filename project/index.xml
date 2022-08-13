@@ -5,20 +5,20 @@
     <link>https://mrfroll.com/project/</link>
       <atom:link href="https://mrfroll.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru</language><copyright>©2021 MrFroll</copyright><lastBuildDate>Wed, 03 Jul 2019 07:46:56 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru</language><lastBuildDate>Wed, 03 Jul 2019 07:46:56 +0000</lastBuildDate>
     <image>
-      <url>https://mrfroll.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://mrfroll.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://mrfroll.com/project/</link>
     </image>
     
     <item>
-      <title>Feedhandler.ru</title>
+      <title>[CLOSED] Feedhandler.ru</title>
       <link>https://mrfroll.com/project/feedhandler/</link>
       <pubDate>Wed, 03 Jul 2019 07:46:56 +0000</pubDate>
       <guid>https://mrfroll.com/project/feedhandler/</guid>
-      <description>&lt;p&gt;Заметки про проект можно найти в категории 
-&lt;a href=&#34;https://mrfroll.com/categories/feedhandler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;feedhandler&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Заметки про проект можно найти в категории &lt;a href=&#34;https://mrfroll.com/categories/feedhandler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;feedhandler&lt;/a&gt;.
+Проект закрылся. Из каких-либо следов проекта в интернете можно только найти &lt;a href=&#34;https://habr.com/ru/post/522994/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;статью на Хабре&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
